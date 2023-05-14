@@ -12,9 +12,6 @@ visited = [False] * (n+1)          # 노드 방문여부
 for _ in range(m):
     a, b = map(int, f().split())
     graph[a].append(b)             # a에 인접한 노드 설정(=b)
-print(distance)
-print(visited)
-print(graph)
 
 def bfs(start):
     answer = []
